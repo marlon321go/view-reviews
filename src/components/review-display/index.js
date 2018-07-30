@@ -94,10 +94,10 @@ class DisplayReviews extends Component {
 
     render() {
         let filteredReviews = this.filterReviews(this.state.data);
-        const loading = <img src={require('./loading.gif')} />;
+        const loading = <img alt='' src={require('./loading.gif')} />;
         return (
             <div>
-                {this.state.data.length == 0 && loading}
+                {this.state.data.length === 0 && loading}
                 <InfiniteScroll
                     dataLength={this.state.data.length}
                     next={this.fetchData}
@@ -114,7 +114,7 @@ class DisplayReviews extends Component {
                         Object.keys(filteredReviews).map((key) => {
                             return <ReviewGroup
                                 reviews={filteredReviews[key]}
-                                reviewCreated={key}
+                                key={key}
                                 groupBy={this.props.groupBy}
                             />
                         })
