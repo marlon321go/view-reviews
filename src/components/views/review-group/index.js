@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules';
 import reviewGroup from './reviewGroup.css';
 import moment from 'moment';
 import { WEEK, MONTH } from '../../../reducers';
-import Review from './single-review';
+import Review from '../single-review';
 
 class ReviewGroup extends Component {
 

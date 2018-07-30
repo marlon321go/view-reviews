@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CSSModules from 'react-css-modules';
 import { updateSearchText, updateGroupBy, updateOrderBy, updateStarRatings } from '../../actions'
-import Search from '../review-search'
-import CustomDropdown from '../review-groupings'
-import StarRatings from '../review-starRatings'
+import Search from '../views/review-search'
+import CustomDropdown from '../views/review-groupings'
+import StarRatings from '../views/review-starRatings'
 import store from '../../store';
 import filters from './filters.css';
 

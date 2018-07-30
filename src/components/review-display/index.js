@@ -5,7 +5,7 @@ import _ from 'lodash';
 import moment from 'moment';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { ASC, WEEK, MONTH } from '../../reducers';
-import ReviewGroup from './review-group';
+import ReviewGroup from '../views/review-group';
 
 const PROXY = 'https://cors-anywhere.herokuapp.com/';
 //encryped using https://www.rot13.com/
