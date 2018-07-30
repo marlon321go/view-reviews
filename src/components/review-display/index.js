@@ -111,10 +111,11 @@ class DisplayReviews extends Component {
                     }
                 >
                     {
-                        Object.keys(filteredReviews).map((key) => {
+                        Object.keys(filteredReviews).map((key, index) => {
                             return <ReviewGroup
+                                key={index}
                                 reviews={filteredReviews[key]}
-                                key={key}
+                                reviewCreated={key}
                                 groupBy={this.props.groupBy}
                             />
                         })

@@ -9,12 +9,12 @@ class ReviewGroup extends Component {
 
     groupByText() {
         if (this.props.groupBy === WEEK) {
-            return moment(this.props.key).format('DD.MM') +
-                moment(this.props.key).add(6, 'days').format(' - DD.MM');
+            return moment(this.props.reviewCreated).format('DD.MM') +
+                moment(this.props.reviewCreated).add(6, 'days').format(' - DD.MM');
         } else if (this.props.groupBy === MONTH) {
-            return moment(this.props.key).format('MMMM YYYY')
+            return moment(this.props.reviewCreated).format('MMMM YYYY')
         } else {
-            return moment(this.props.key).format('ddd, DD.MM.YYYY')
+            return moment(this.props.reviewCreated).format('ddd, DD.MM.YYYY')
         }
     }
 
@@ -26,9 +26,9 @@ class ReviewGroup extends Component {
                 </div>
                 <div className='reviews'>
                     {
-                        this.props.reviews.map((review) => {
+                        this.props.reviews.map((review, index) => {
                             return <Review
-                                key={review.reviewId}
+                                key={index}
                                 data={review}
                             />
                         })
