@@ -1,0 +1,63 @@
+.title {
+    font-weight: bold;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 18px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+  }
+  
+  .stars-container {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .star-container {
+    position: relative;
+    padding-left: 23px;
+    margin-left: 2px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #ccc;
+  }
+  
+  .star-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid #67C5E6;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .star-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .star-container .checkmark:after {
+    box-sizing: border-box;
+    border: solid #67C5E6;
+    background-color: #67C5E6;
+    left: 2px;
+    top: 2px;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    color: #67C5E6;
+  }

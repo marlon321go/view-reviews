@@ -1,0 +1,57 @@
+.container {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    max-width: 700px;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  .heading {
+    font-weight: bold;
+    display: flex;
+    height: 50px;
+    align-content: center;
+    margin-bottom: 14px;
+  }
+  
+  .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #cdcdcd;
+    display: inline-block;
+  }
+  
+  .info-holder {
+    display: inline-block;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .info-text {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .info-title {
+    margin-top: 6px; 
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .grey {
+    color: #ccc;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin: 24px 0 10px 0; 
+    color:black
+  }
+  
+  .highlight {
+    background-color: #22C3E8;
+  }
